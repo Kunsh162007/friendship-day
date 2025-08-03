@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: url("assets/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #00ffff;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.input-section {
+  margin-top: 2rem;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #00ffff;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00ffcc;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+  animation: fadeIn 2s ease forwards;
+}
+
+#surprise {
+  margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+canvas#stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
